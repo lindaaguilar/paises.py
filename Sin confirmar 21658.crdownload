@@ -1,0 +1,25 @@
+#listado de paises
+def paises():
+	listadopaises = []
+	x=True
+	conteo=0
+	conteoprint=0
+	while x==True:
+		# ingrese el nombre de un pais
+		pais=input("ingrese el nombre de un pais: ")
+		listadopaises.insert(conteo,pais)
+		conteo=conteo+1
+		print(listadopaises)
+		#desea ingresar otro pais                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+		opcion=input("¿desea agregar otro pais? s/n")
+		if opcion == "s":
+			x=True
+		else:
+			x=False
+			for a in listadopaises:
+				conteoprint=conteoprint+1
+				print(str(conteoprint)+" "+a)
+			break
+
+				
+paises()
